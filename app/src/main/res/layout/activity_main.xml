@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.ly.autoscrolllayout.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5"
+        android:padding="12dp"
+        android:text="1、横向自动滚动的TextView，跑马灯效果" />
+
+    <com.ly.autoscrolllayout.ScrollTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="测试自动滚动的文字。。。。测试自动滚动的文字。。。。测试自动滚动的文字。。。。测试自动滚动的文字。。。。" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5"
+        android:padding="12dp"
+        android:text="2、竖向自动滚动的TextView" />
+
+    <com.ly.autoscrolllayout.VerticalScrollTextView
+        android:id="@+id/v_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        app:vst_animDuration="1000"
+        app:vst_scrollOrientation="up"
+        app:vst_singleLine="true"
+        app:vst_sleepTime="2000"
+        app:vst_textColor="@color/colorAccent"
+        app:vst_textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5"
+        android:padding="12dp"
+        android:text="3、竖向自动滚动的View,类似淘宝首页" />
+
+    <com.ly.autoscrolllayout.VerticalScrollLayout
+        android:id="@+id/scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:vsl_animDuration="1000"
+        app:vsl_sleepTime="2000"
+        app:vsl_isCusDuration="true"/>
+</LinearLayout>

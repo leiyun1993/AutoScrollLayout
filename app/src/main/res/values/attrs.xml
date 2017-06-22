@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VerticalScrollTextView">
+        <attr name="vst_sleepTime" format="integer" />
+        <attr name="vst_animDuration" format="integer" />
+        <attr name="vst_textSize" format="dimension" />
+        <attr name="vst_textColor" format="color" />
+        <attr name="vst_singleLine" format="boolean" />
+        <attr name="vst_scrollOrientation">
+            <enum name="up" value="0" />
+            <enum name="down" value="1" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="VerticalScrollLayout">
+        <attr name="vsl_animDuration" format="integer" />
+        <attr name="vsl_sleepTime" format="integer" />
+        <attr name="vsl_isCusDuration" format="boolean" />
+    </declare-styleable>
+</resources>
