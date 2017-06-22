@@ -8,4 +8,4 @@
  实际上传入一个List<View>即可简单实现，可自行修改
 
  示例图如下，有需要的自己扣源码。网上有很多类似的代码，恐像抄袭，还望见谅。
- ![image](https://github.com/leiyun/AutoScrollLayout/raw/master/image/01.gif)
+ ![image](https://github.com/leiyun1993/AutoScrollLayout/raw/master/image/01.gif)
