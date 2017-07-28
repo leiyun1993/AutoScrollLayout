@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
     private VerticalScrollTextView vTextView;
     private VerticalScrollLayout vScrollLayout;
 
