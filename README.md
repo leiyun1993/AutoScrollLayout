@@ -7,5 +7,7 @@
  3，竖向的View滚动可实现类似淘宝首页的效果，通过继承ViewFlipper实现，这里用Adapter控制数据实际上是复杂的做法，
  实际上传入一个List<View>即可简单实现，可自行修改
 
+ 4,4~7是使用ViewFlipper实现的几种不同的切换效果
+
  示例图如下，有需要的自己扣源码。网上有很多类似的代码，恐像抄袭，还望见谅。
  ![image](https://github.com/leiyun1993/AutoScrollLayout/raw/master/image/01.gif)

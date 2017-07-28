@@ -5,8 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+import android.widget.ViewFlipper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +24,76 @@ public class MainActivity extends AppCompatActivity {
 
         initVTextView();
         initVScrollLayout();
+        getFlipperView();
+        initPushUpViewFlipper();
+        initPushLeftViewFlipper();
+        initFadeInViewFlipper();
+        initHyperspaceViewFlipper();
+    }
+
+    private void initPushUpViewFlipper() {
+        ViewFlipper flipper = (ViewFlipper) findViewById(R.id.push_up_flipper);
+        flipper.removeAllViews();
+        for (View flipperView : getFlipperView()) {
+            flipper.addView(flipperView);
+        }
+        flipper.startFlipping();
+        flipper.setFlipInterval(2000);
+        flipper.setInAnimation(AnimationUtils.loadAnimation(this, R.anim.push_up_in));
+        flipper.setOutAnimation(AnimationUtils.loadAnimation(this, R.anim.push_up_out));
+    }
+
+    private void initPushLeftViewFlipper() {
+        ViewFlipper flipper = (ViewFlipper) findViewById(R.id.push_left_flipper);
+        flipper.removeAllViews();
+        for (View flipperView : getFlipperView()) {
+            flipper.addView(flipperView);
+        }
+        flipper.startFlipping();
+        flipper.setFlipInterval(2000);
+        flipper.setInAnimation(AnimationUtils.loadAnimation(this, R.anim.push_left_in));
+        flipper.setOutAnimation(AnimationUtils.loadAnimation(this, R.anim.push_left_out));
+    }
+
+    private void initFadeInViewFlipper() {
+        ViewFlipper flipper = (ViewFlipper) findViewById(R.id.fade_in_flipper);
+        flipper.removeAllViews();
+        for (View flipperView : getFlipperView()) {
+            flipper.addView(flipperView);
+        }
+        flipper.startFlipping();
+        flipper.setFlipInterval(2000);
+        flipper.setInAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
+        flipper.setOutAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
+    }
+
+    private void initHyperspaceViewFlipper() {
+        ViewFlipper flipper = (ViewFlipper) findViewById(R.id.hyperspace_flipper);
+        flipper.removeAllViews();
+        for (View flipperView : getFlipperView()) {
+            flipper.addView(flipperView);
+        }
+        flipper.startFlipping();
+        flipper.setFlipInterval(2000);
+        flipper.setInAnimation(AnimationUtils.loadAnimation(this, R.anim.hyperspace_in));
+        flipper.setOutAnimation(AnimationUtils.loadAnimation(this, R.anim.hyperspace_out));
+    }
+
+    private List<View> getFlipperView() {
+        List<View> flipperViews = new ArrayList<>();
+        View view1 = View.inflate(this, R.layout.item_text_view, null);
+        ((TextView) view1).setText("床前明月光");
+        flipperViews.add(view1);
+        View view2 = View.inflate(this, R.layout.item_text_view, null);
+        ((TextView) view2).setText("疑是地上霜");
+        flipperViews.add(view2);
+        View view3 = View.inflate(this, R.layout.item_text_view, null);
+        ((TextView) view3).setText("举头望明月");
+        flipperViews.add(view3);
+        View view4 = View.inflate(this, R.layout.item_text_view, null);
+        ((TextView) view4).setText("低头思故乡");
+        flipperViews.add(view4);
+        return flipperViews;
     }
 
     private void initVScrollLayout() {
