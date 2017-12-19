@@ -9,5 +9,5 @@
 
  4,4~7是使用ViewFlipper实现的几种不同的切换效果
 
- 示例图如下，有需要的自己扣源码。网上有很多类似的代码，恐像抄袭，还望见谅。
+ 示例图如下，有需要的自己扣源码。当然如果没有想要的效果，也可以继续搜一搜，类似的东西很多。
  ![image](https://github.com/leiyun1993/AutoScrollLayout/raw/master/image/01.gif)
