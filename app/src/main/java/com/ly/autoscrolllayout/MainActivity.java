@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
         initHyperspaceViewFlipper();
     }
 
+    /**
+     * 新增仿中奖滚动
+     */
     private void initSmoothScrollLayout() {
         SmoothScrollLayout layout = (SmoothScrollLayout) findViewById(R.id.smoothScrollLayout);
         List<String> list = new ArrayList<>();
