@@ -25,11 +25,23 @@ public class MainActivity extends AppCompatActivity {
 
         initVTextView();
         initVScrollLayout();
+        initSmoothScrollLayout();
         getFlipperView();
         initPushUpViewFlipper();
         initPushLeftViewFlipper();
         initFadeInViewFlipper();
         initHyperspaceViewFlipper();
+    }
+
+    private void initSmoothScrollLayout() {
+        SmoothScrollLayout layout = (SmoothScrollLayout) findViewById(R.id.smoothScrollLayout);
+        List<String> list = new ArrayList<>();
+        list.add("张三购买彩票中了20W");
+        list.add("187****0405购买彩票中了20W");
+        list.add("李四购买彩票中了超级大礼包一个，获得飞机票两张");
+        list.add("156***9876购买彩票中了三等奖");
+        list.add("134***4235购买彩票中了特等奖，并获得海南三亚双人双飞游套餐一个");
+        layout.setData(list);
     }
 
     private void initPushUpViewFlipper() {
