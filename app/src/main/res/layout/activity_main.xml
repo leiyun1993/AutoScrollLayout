@@ -8,123 +8,20 @@
     android:orientation="vertical"
     tools:context="com.ly.autoscrolllayout.MainActivity">
 
-    <ScrollView
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#f5f5f5"
-                android:padding="12dp"
-                android:text="1、横向自动滚动的TextView，跑马灯效果" />
-
-            <com.ly.autoscrolllayout.ScrollTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="12dp"
-                android:text="测试自动滚动的文字。。。。测试自动滚动的文字。。。。测试自动滚动的文字。。。。测试自动滚动的文字。。。。" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#f5f5f5"
-                android:padding="12dp"
-                android:text="2、竖向自动滚动的TextView" />
-
-            <com.ly.autoscrolllayout.VerticalScrollTextView
-                android:id="@+id/v_text_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="12dp"
-                app:vst_animDuration="1000"
-                app:vst_scrollOrientation="up"
-                app:vst_singleLine="true"
-                app:vst_sleepTime="2000"
-                app:vst_textColor="@color/colorAccent"
-                app:vst_textSize="14sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#f5f5f5"
-                android:padding="12dp"
-                android:text="3、竖向自动滚动的View,类似淘宝首页" />
-
-            <com.ly.autoscrolllayout.VerticalScrollLayout
-                android:id="@+id/scroll_layout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                app:vsl_animDuration="1000"
-                app:vsl_isCusDuration="true"
-                app:vsl_sleepTime="2000" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#f5f5f5"
-                android:padding="12dp"
-                android:text="4，竖向自动滚动的View,类似中奖通知，缓慢滚动" />
-
-            <com.ly.autoscrolllayout.SmoothScrollLayout
-                android:id="@+id/smoothScrollLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#f5f5f5"
-                android:padding="12dp"
-                android:text="5、ViewFlipper实现滚动(PUSH_ON)" />
-
-            <ViewFlipper
-                android:id="@+id/push_up_flipper"
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#f5f5f5"
-                android:padding="12dp"
-                android:text="6、ViewFlipper实现滚动(PUSH_LEFT)" />
-
-            <ViewFlipper
-                android:id="@+id/push_left_flipper"
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#f5f5f5"
-                android:padding="12dp"
-                android:text="7、ViewFlipper实现滚动(FADE_IN)" />
-
-            <ViewFlipper
-                android:id="@+id/fade_in_flipper"
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#f5f5f5"
-                android:padding="12dp"
-                android:text="8、ViewFlipper实现滚动(HYPERSPACE)" />
-
-            <ViewFlipper
-                android:id="@+id/hyperspace_flipper"
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
-        </LinearLayout>
-    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#fff"
+        app:itemIconTint="@color/selector_menu_color"
+        app:itemTextColor="@color/selector_menu_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation" />
 
 </LinearLayout>

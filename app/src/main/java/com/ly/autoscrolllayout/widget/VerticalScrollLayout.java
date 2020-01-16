@@ -1,4 +1,4 @@
-package com.ly.autoscrolllayout;
+package com.ly.autoscrolllayout.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,6 +9,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ListAdapter;
 import android.widget.ViewFlipper;
+
+import com.ly.autoscrolllayout.R;
 
 /**
  * 类名：VerticalScrollLayout

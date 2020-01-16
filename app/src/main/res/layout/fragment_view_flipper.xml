@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ViewFlipperFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:padding="12dp"
+            android:text="1、ViewFlipper实现滚动(PUSH_ON)" />
+
+        <ViewFlipper
+            android:id="@+id/push_up_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:padding="12dp"
+            android:text="2、ViewFlipper实现滚动(PUSH_LEFT)" />
+
+        <ViewFlipper
+            android:id="@+id/push_left_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:padding="12dp"
+            android:text="3、ViewFlipper实现滚动(FADE_IN)" />
+
+        <ViewFlipper
+            android:id="@+id/fade_in_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:padding="12dp"
+            android:text="4、ViewFlipper实现滚动(HYPERSPACE)" />
+
+        <ViewFlipper
+            android:id="@+id/hyperspace_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

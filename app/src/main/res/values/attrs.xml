@@ -18,4 +18,9 @@
         <attr name="vsl_sleepTime" format="integer" />
         <attr name="vsl_isCusDuration" format="boolean" />
     </declare-styleable>
+
+    <declare-styleable name="TextSwitcherView">
+        <attr name="tsv_textColor" format="color"/>
+        <attr name="tsv_textSize" format="dimension"/>
+    </declare-styleable>
 </resources>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AutoScrollLayout</string>
+    <string name="view_flipper">ViewFlipper</string>
 </resources>

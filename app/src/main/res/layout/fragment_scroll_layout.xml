@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ScrollLayoutFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:padding="12dp"
+            android:text="1、横向自动滚动的TextView，跑马灯效果" />
+
+        <com.ly.autoscrolllayout.widget.ScrollTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="测试自动滚动的文字。。。。测试自动滚动的文字。。。。测试自动滚动的文字。。。。测试自动滚动的文字。。。。" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:padding="12dp"
+            android:text="2、竖向自动滚动的TextView" />
+
+        <com.ly.autoscrolllayout.widget.VerticalScrollTextView
+            android:id="@+id/v_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            app:vst_animDuration="1000"
+            app:vst_scrollOrientation="up"
+            app:vst_singleLine="true"
+            app:vst_sleepTime="2000"
+            app:vst_textColor="@color/colorAccent"
+            app:vst_textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:padding="12dp"
+            android:text="3、竖向自动滚动的View,类似淘宝首页(old)" />
+
+        <com.ly.autoscrolllayout.widget.VerticalScrollLayout
+            android:id="@+id/scroll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:vsl_animDuration="1000"
+            app:vsl_isCusDuration="true"
+            app:vsl_sleepTime="2000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:padding="12dp"
+            android:text="4，竖向自动滚动的View,类似中奖通知，缓慢滚动" />
+
+        <com.ly.autoscrolllayout.widget.SmoothScrollLayout
+            android:id="@+id/smoothScrollLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:padding="12dp"
+            android:text="5，ViewSwitcher仿淘宝头条(new)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="淘宝头条"
+                android:textColor="#333"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.ly.autoscrolllayout.widget.TextSwitcherView
+                android:id="@+id/textSwitcherView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

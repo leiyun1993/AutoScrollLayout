@@ -1,4 +1,8 @@
+ # 一些常见的切换效果
+
  这是一个小demo展示文字自动横向滚动、竖向滚动和View竖向滚动。
+
+ ### 自定义+动画控制
 
  1、文字横向滚动只是直接用TextView实现跑马灯效果
 
@@ -9,7 +13,23 @@
  
  4、实现自动滚动的View，仿中奖缓慢滚动效果
 
- 5~7、是使用ViewFlipper实现的几种不同的切换效果
+ 5、ViewSwitcher+Handler实现切换
 
- 示例图如下，有需要的自己扣源码。当然如果没有想要的效果，也可以继续搜一搜，类似的东西很多。
- ![image](https://github.com/leiyun1993/AutoScrollLayout/raw/master/image/01.gif)
+ ![image](https://github.com/leiyun1993/AutoScrollLayout/raw/master/image/02.gif)
+
+ ### ViewFlipper实现
+
+ 以下是使用ViewFlipper实现的几种不同的切换效果
+
+ ![image](https://github.com/leiyun1993/AutoScrollLayout/raw/master/image/03.gif)
+
+
+ 有需要的自己扣源码。
+
+ ### 更新说明
+
+ 2020-1-16
+
+ 1、更新为androidX版本，老版本在support分支
+
+ 2、用ViewSwitcher模拟了新的淘宝头条滚动效果

@@ -1,4 +1,4 @@
-package com.ly.autoscrolllayout;
+package com.ly.autoscrolllayout.widget;
 
 import android.animation.ObjectAnimator;
 import android.content.Context;
@@ -6,13 +6,15 @@ import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.os.Handler;
 import android.os.Message;
-import android.support.annotation.IntRange;
+import androidx.annotation.IntRange;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.ly.autoscrolllayout.R;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
